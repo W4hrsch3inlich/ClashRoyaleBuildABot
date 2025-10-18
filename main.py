@@ -8,13 +8,13 @@ try:
     from PyQt6.QtWidgets import QApplication
 
     from clashroyalebuildabot.actions import ArchersAction
-    from clashroyalebuildabot.actions import BabyDragonAction
-    from clashroyalebuildabot.actions import CannonAction
-    from clashroyalebuildabot.actions import GoblinBarrelAction
+    from clashroyalebuildabot.actions import ArrowsAction
+    from clashroyalebuildabot.actions import FireballAction
+    from clashroyalebuildabot.actions import GiantAction
     from clashroyalebuildabot.actions import KnightAction
+    from clashroyalebuildabot.actions import MinionsAction
     from clashroyalebuildabot.actions import MinipekkaAction
     from clashroyalebuildabot.actions import MusketeerAction
-    from clashroyalebuildabot.actions import WitchAction
     from clashroyalebuildabot.gui.main_window import MainWindow
     from clashroyalebuildabot.gui.utils import load_config
     from clashroyalebuildabot.utils.git_utils import check_and_pull_updates
@@ -27,13 +27,13 @@ def main():
     check_and_pull_updates()
     actions = [
         ArchersAction,
-        GoblinBarrelAction,
-        BabyDragonAction,
-        CannonAction,
+        GiantAction,
         KnightAction,
+        MinionsAction,
+        FireballAction,
         MinipekkaAction,
         MusketeerAction,
-        WitchAction,
+        ArrowsAction,
     ]
     try:
         config = load_config()
